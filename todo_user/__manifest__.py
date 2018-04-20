@@ -4,10 +4,10 @@
     'summary': 'Maneja las tareas para multiusuario',
     'autor': 'Adrià Martin',
     'version': '1.0',
-    'depends': ['todo_app', 'mail'],
+    'depends': ['base', 'mail', 'todo_app', ],
     'data': [
         'views/todo_view.xml',
-        'security/todo_access_rules.xml'
+        #'security/todo_access_rules.xml'
     ],
-    'demo': ['todo.task.csv', 'todo_data.xml'],
+    #'demo': ['todo.task.csv', 'todo_data.xml'],
 }

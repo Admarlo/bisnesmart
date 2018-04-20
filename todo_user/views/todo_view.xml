@@ -1,8 +1,7 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <odoo>
     <data>
-
-        <!-- Extend form -->
+        <!-- Formulario extendido -->
         <record id="view_form_todo_task_inherited" model="ir.ui.view">
         <field name="name">Todo Task Form - Users extension</field>
         <field name="model">todo.task</field>
@@ -19,7 +18,7 @@
             </field>
 
             <!-- Open Chatter widgets -->
-            <sheet position="after">
+           <sheet position="after">
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers" />
                     <field name="message_ids" widget="mail_thread" />
@@ -28,8 +27,8 @@
             </field>
         </record>
 
-        <!--Extend list -->
-        <record id="view_tree_todo_task" model="ir.ui.view">
+        <!--Lista extendida -->
+        <record id="view_tree_todo_task_inherited" model="ir.ui.view">
            <field name="name">To-do Task tree - User extension</field>
            <field name="model">todo.task</field>
            <field name="inherit_id" ref="todo_app.view_tree_todo_task"/>
@@ -40,7 +39,7 @@
            </field>
         </record>
 
-        <!--Extend search-->
+        <!--Búsqueda extendida-->
         <record id="view_filter_todo_task_inherited" model="ir.ui.view">
         <field name="name">Todo Task Search - Users extension</field>
         <field name="model">todo.task</field>
@@ -56,12 +55,12 @@
         </field>
         </record>
 
-        <!-- Modify menu item -->
+        <!-- Modificador elemento del menú -->
         <record id="todo_app.menu_todo_task" model="ir.ui.menu">
             <field name="name">My To-Do</field>
         </record>
 
-        <!-- Action to open To-Do Task list -->
+        <!-- Acción para abrir lista de tareas pendientes -->
         <record model="ir.actions.act_window" id="todo_app.action_todo_task">
             <field name="context">
                 {'search_default_filter_my_tasks': True}
