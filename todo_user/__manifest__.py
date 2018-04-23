@@ -2,12 +2,11 @@
     'name': 'Multiuser To-Do',
     'description': 'Extend the To-Do app to multiuser',
     'summary': 'Maneja las tareas para multiusuario',
-    'autor': 'Adrià Martin',
+    'author': 'Adria Martin',
     'version': '1.0',
-    'depends': ['base', 'mail', 'todo_app', ],
+    'depends': ['todo_app', 'mail'],
     'data': [
-        'views/todo_view.xml',
-        #'security/todo_access_rules.xml'
+        'views/todo_task.xml',
     ],
     #'demo': ['todo.task.csv', 'todo_data.xml'],
 }

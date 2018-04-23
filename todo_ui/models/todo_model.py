@@ -155,4 +155,4 @@ class TodoTask(models.Model):
 
     user_todo_count = fields.Integer(
         'User To-Do Count',
-compute='compute_user_todo_count')
+        compute='compute_user_todo_count')
